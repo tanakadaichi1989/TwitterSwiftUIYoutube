@@ -16,7 +16,7 @@ struct FeedView: View {
                         .padding()
                 }
             }
-        }
+        }        
     }
 }
 
