@@ -20,7 +20,7 @@ struct MainTabView: View {
                     Image(systemName: "house")
                 }.tag(0)
             
-            ExporeView()
+            ExploreView()
                 .onTapGesture {
                     self.selectedIndex = 1
                 }
