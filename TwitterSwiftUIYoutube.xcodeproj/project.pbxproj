@@ -31,6 +31,7 @@
 		A1D5DBBF281E4E32005BE0A9 /* RegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1D5DBBE281E4E32005BE0A9 /* RegistrationView.swift */; };
 		A1D5DBC1281E4F80005BE0A9 /* RoundedShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1D5DBC0281E4F80005BE0A9 /* RoundedShape.swift */; };
 		A1D5DBC3281E53FA005BE0A9 /* CustomInputField.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1D5DBC2281E53FA005BE0A9 /* CustomInputField.swift */; };
+		A1D5DBC5281E7D3F005BE0A9 /* AuthenticationHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1D5DBC4281E7D3F005BE0A9 /* AuthenticationHeaderView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -59,6 +60,7 @@
 		A1D5DBBE281E4E32005BE0A9 /* RegistrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationView.swift; sourceTree = "<group>"; };
 		A1D5DBC0281E4F80005BE0A9 /* RoundedShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedShape.swift; sourceTree = "<group>"; };
 		A1D5DBC2281E53FA005BE0A9 /* CustomInputField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomInputField.swift; sourceTree = "<group>"; };
+		A1D5DBC4281E7D3F005BE0A9 /* AuthenticationHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationHeaderView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -331,6 +333,7 @@
 			children = (
 				A1D5DBBB281E4DF5005BE0A9 /* ViewModel */,
 				A1D5DBBA281E4DF2005BE0A9 /* Views */,
+				A1D5DBC4281E7D3F005BE0A9 /* AuthenticationHeaderView.swift */,
 			);
 			path = Authentication;
 			sourceTree = "<group>";
@@ -425,6 +428,7 @@
 				A1D5DB9D281D5E4A005BE0A9 /* ProfileView.swift in Sources */,
 				A10CC370281400870098B8C2 /* TweetRowView.swift in Sources */,
 				A1D5DBAB281D8DE8005BE0A9 /* SideMenuRowView.swift in Sources */,
+				A1D5DBC5281E7D3F005BE0A9 /* AuthenticationHeaderView.swift in Sources */,
 				A10CC36D2813FFD80098B8C2 /* FeedView.swift in Sources */,
 				A1D5DB9F281D7D88005BE0A9 /* TweetFilterViewModel.swift in Sources */,
 				A1D5DBC3281E53FA005BE0A9 /* CustomInputField.swift in Sources */,
