@@ -37,6 +37,7 @@
 		A1D5DBCC281F8631005BE0A9 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = A1D5DBCB281F8631005BE0A9 /* FirebaseFirestore */; };
 		A1D5DBCE281F8631005BE0A9 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = A1D5DBCD281F8631005BE0A9 /* FirebaseStorage */; };
 		A1D5DBD0281F8631005BE0A9 /* FirebaseStorageSwift-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = A1D5DBCF281F8631005BE0A9 /* FirebaseStorageSwift-Beta */; };
+		A1D5DBDD281F961C005BE0A9 /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1D5DBDC281F961C005BE0A9 /* AuthViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -67,6 +68,7 @@
 		A1D5DBC2281E53FA005BE0A9 /* CustomInputField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomInputField.swift; sourceTree = "<group>"; };
 		A1D5DBC4281E7D3F005BE0A9 /* AuthenticationHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationHeaderView.swift; sourceTree = "<group>"; };
 		A1D5DBC6281F8402005BE0A9 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
+		A1D5DBDC281F961C005BE0A9 /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AuthViewModel.swift; path = TwitterSwiftUIYoutube/Core/Authentication/AuthViewModel.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -361,6 +363,7 @@
 		A1D5DBBB281E4DF5005BE0A9 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				A1D5DBDC281F961C005BE0A9 /* AuthViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -465,6 +468,7 @@
 				A1D5DBB1281D9D73005BE0A9 /* SideMenuOptionRowView.swift in Sources */,
 				A10CC3532813FD510098B8C2 /* TwitterSwiftUIYoutubeApp.swift in Sources */,
 				A1D5DBBD281E4E19005BE0A9 /* LoginView.swift in Sources */,
+				A1D5DBDD281F961C005BE0A9 /* AuthViewModel.swift in Sources */,
 				A1D5DB97281D5AF4005BE0A9 /* NotificationsView.swift in Sources */,
 				A1D5DBAF281D9508005BE0A9 /* UserStatsView.swift in Sources */,
 				A1D5DBBF281E4E32005BE0A9 /* RegistrationView.swift in Sources */,
