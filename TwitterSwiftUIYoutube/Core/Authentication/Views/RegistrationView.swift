@@ -17,6 +17,11 @@ struct RegistrationView: View {
     
     var body: some View {
         VStack {
+            
+            NavigationLink(destination: ProfilePhotoSelectorView(),
+                           isActive: $viewModel.didAuthenticateUser,
+                           label: {})
+            
             AuthenticationHeaderView(title1: "Get started.", title2: "Create your account")
             
             VStack(spacing: 40) {
@@ -31,7 +36,10 @@ struct RegistrationView: View {
             .padding(32)
             
             Button {
-                viewModel.register(withEmail: email, password: password, fullname: fullname, username: username)
+                viewModel.register(withEmail: email,
+                                   password: password,
+                                   fullname: fullname,
+                                   username: username)
             } label: {
                 Text("Sign Up")
                     .font(.headline)
