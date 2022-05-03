@@ -21,6 +21,7 @@ struct ProfilePhotoSelectorView: View {
             } label: {
                 if let profileImage = profileImage {
                     profileImage
+                        .resizable()
                         .modifier(ProfileImageModifier())
                 } else {
                     Image(systemName: "plus.circle")
@@ -51,7 +52,7 @@ private struct ProfileImageModifier: ViewModifier {
     func body(content: Content) -> some View {
         content
             .foregroundColor(Color(.systemBlue))
-            .scaledToFit()
+            .scaledToFill()
             .frame(width: 180, height: 180)
             .clipShape(Circle())
     }
