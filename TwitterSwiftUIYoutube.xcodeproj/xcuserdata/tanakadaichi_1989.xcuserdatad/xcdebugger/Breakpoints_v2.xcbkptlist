@@ -7,113 +7,33 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "6C7F0B85-0C8E-4D13-87CF-4FDB38A91BF0"
+            uuid = "62AC9DBF-CA6D-40D2-A07B-AE5E93A95A2C"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "TwitterSwiftUIYoutube/Service/UserService.swift"
+            filePath = "TwitterSwiftUIYoutube/Core/Authentication/AuthViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "18"
-            endingLineNumber = "18"
-            landmarkName = "fetchUser(withUid:completion:)"
+            startingLineNumber = "82"
+            endingLineNumber = "82"
+            landmarkName = "fetchUser()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "63A77802-45A8-4577-B4AD-77947DB0AFEB"
+            uuid = "60D70F6C-3A91-4F81-967F-14DB7CF007BA"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "TwitterSwiftUIYoutube/ContentView.swift"
+            filePath = "TwitterSwiftUIYoutube/Core/Authentication/AuthViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "11"
-            endingLineNumber = "11"
-            landmarkName = "ContentView"
-            landmarkType = "14">
-            <Locations>
-               <Location
-                  uuid = "63A77802-45A8-4577-B4AD-77947DB0AFEB - def04ab47adc0cac"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "property wrapper backing initializer of TwitterSwiftUIYoutube.ContentView.showMenu : Swift.Bool"
-                  moduleName = "TwitterSwiftUIYoutube"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/tanakadaichi_1989/Desktop/TwitterSwiftUIYoutube/TwitterSwiftUIYoutube/ContentView.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "11"
-                  endingLineNumber = "11"
-                  offsetFromSymbolStart = "36">
-               </Location>
-               <Location
-                  uuid = "63A77802-45A8-4577-B4AD-77947DB0AFEB - 13986c785f23006e"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "TwitterSwiftUIYoutube.ContentView.init(viewModel: SwiftUI.EnvironmentObject&lt;TwitterSwiftUIYoutube.AuthViewModel&gt;) -&gt; TwitterSwiftUIYoutube.ContentView"
-                  moduleName = "TwitterSwiftUIYoutube"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/tanakadaichi_1989/Desktop/TwitterSwiftUIYoutube/TwitterSwiftUIYoutube/ContentView.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "11"
-                  endingLineNumber = "11"
-                  offsetFromSymbolStart = "24">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "4D43B891-1D25-4F47-8776-3FF26C4876CE"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "TwitterSwiftUIYoutube/ContentView.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "38"
-            endingLineNumber = "38"
-            landmarkName = "mainInterfaceView"
-            landmarkType = "24">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "37D19E22-77AD-43A7-990D-E20249BFAC7E"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "TwitterSwiftUIYoutube/ContentView.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "44"
-            endingLineNumber = "44"
-            landmarkName = "mainInterfaceView"
-            landmarkType = "24">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "FE4AE562-FB2D-4043-8D14-55DBFD1BED80"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "TwitterSwiftUIYoutube/ContentView.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "70"
-            endingLineNumber = "70"
-            landmarkName = "mainInterfaceView"
-            landmarkType = "24">
+            startingLineNumber = "35"
+            endingLineNumber = "35"
+            landmarkName = "login(withEmail:password:)"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

@@ -61,7 +61,7 @@ class AuthViewModel: ObservableObject {
     
     func signOut(){
         userSession = nil
-        //try? Auth.auth().signOut()
+        try? Auth.auth().signOut()
     }
     
     func uploadProfileImage(_ image: UIImage) {
