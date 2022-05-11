@@ -23,6 +23,7 @@ struct TwitterSwiftUIYoutubeApp: App {
                 ContentView()
             }
             .environmentObject(viewModel)
+            .navigationViewStyle(StackNavigationViewStyle())
         }
     }
 }

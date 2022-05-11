@@ -49,7 +49,7 @@ extension ContentView {
             
             SideMenuView()
                 .frame(width: 300)
-                .offset(x: showMenu ? 0 : -300, y:0)
+                .offset(x: showMenu ? 0 : -300, y: 0)
                 .background(showMenu ? Color.white : Color.clear)
         }
         .navigationTitle("Home")
@@ -58,7 +58,7 @@ extension ContentView {
             ToolbarItem(placement: .navigationBarLeading){
                 Button {
                     withAnimation(.easeInOut) {
-                        showMenu.toggle()
+                         showMenu.toggle()
                     }
                 } label :{
                     Circle()
