@@ -11,26 +11,23 @@ struct ExploreView: View {
     @EnvironmentObject var viewModel: AuthViewModel
     
     var body: some View {
-        NavigationView {
-            VStack {
-                ScrollView {
-                    LazyVStack {
-                        ForEach(0...25 ,id: \.self){ _ in
-                            NavigationLink {
-                                if let user = viewModel.currentUser {
-                                    ProfileView(user: user)
-                                }
-                            } label: {
-                                UserRowView()
+        VStack {
+            ScrollView {
+                LazyVStack {
+                    ForEach(0...25 ,id: \.self){ _ in
+                        NavigationLink {
+                            if let user = viewModel.currentUser {
+                                ProfileView(user: user)
                             }
+                        } label: {
+                            UserRowView()
                         }
                     }
                 }
             }
-            .navigationTitle("Explore")
-            .navigationBarTitleDisplayMode(.inline)
         }
-        .navigationViewStyle(StackNavigationViewStyle())
+        .navigationTitle("Explore")
+        .navigationBarTitleDisplayMode(.inline)
     }
 }
 
