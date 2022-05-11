@@ -11,7 +11,7 @@ struct SideMenuView: View {
     @EnvironmentObject var viewModel: AuthViewModel
     
     var body: some View {
-
+        if let user = viewModel.currentUser {
             VStack(alignment: .leading, spacing: 32) {
                 //sideMenuHeader
                 VStack(alignment: .leading) {
@@ -19,10 +19,10 @@ struct SideMenuView: View {
                         .frame(width: 48, height: 48)
                     
                     VStack(alignment: .leading, spacing: 4){
-                        Text(viewModel.currentUser?.fullname ?? "")
+                        Text(user.fullname)
                             .font(.headline)
                         
-                        Text("@\(viewModel.currentUser?.username ?? "")")
+                        Text("@\(user.username)")
                             .font(.caption)
                             .foregroundColor(.gray)
                     }
@@ -53,7 +53,7 @@ struct SideMenuView: View {
                 
                 Spacer()
             }
-
+        }
     }
 }
 
