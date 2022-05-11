@@ -21,7 +21,6 @@ struct TwitterSwiftUIYoutubeApp: App {
         WindowGroup {
             NavigationView {
                 ContentView()
-                //LoginView()
             }
             .environmentObject(viewModel)
             .navigationViewStyle(StackNavigationViewStyle())

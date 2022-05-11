@@ -33,6 +33,8 @@ class AuthViewModel: ObservableObject {
             guard let user = result?.user else { return }
             self.userSession = user
             print("DEBUG: Did log user in \(self.userSession?.uid)")
+            
+            self.fetchUser()
         }
     }
     
@@ -60,7 +62,7 @@ class AuthViewModel: ObservableObject {
     }
     
     func signOut(){
-        userSession = nil
+        self.userSession = nil
         try? Auth.auth().signOut()
     }
     
