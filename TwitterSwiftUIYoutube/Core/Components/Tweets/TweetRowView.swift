@@ -6,24 +6,32 @@
 //
 
 import SwiftUI
+import Kingfisher
 
 struct TweetRowView: View {
+    let tweet: Tweet
+    
     var body: some View {
         VStack(alignment: .leading){
             // profile image + user info + tweet
+            
+            if let user = tweet.user {
             HStack(alignment: .top, spacing: 12){
-                Circle()
+                KFImage(URL(string: user.profileImageUrl))
+                    .resizable()
+                    .scaledToFill()
                     .frame(width: 56, height: 56)
-                    .foregroundColor(Color(.systemBlue))
+                    .clipShape(Circle())
                 
                 // user info & tweet caption
                 VStack(alignment: .leading, spacing: 4) {
                     // user info
+  
                     HStack {
-                        Text("Bruce Waryne")
+                        Text(user.fullname)
                             .font(.subheadline)
                             .bold()
-                        Text("@batman")
+                        Text("@\(user.username)")
                             .foregroundColor(.gray)
                             .font(.caption)
                         Text("2w")
@@ -31,13 +39,16 @@ struct TweetRowView: View {
                             .font(.caption)
                     }
                     
+                    
                     // tweet caption
-                    Text("I believe in Harvey Dent")
+                    Text(tweet.caption)
                         .font(.subheadline)
                         .multilineTextAlignment(.leading)
                     
                 }
             }
+            }
+            
             // action buttons
             HStack {
                 Button {
@@ -82,8 +93,8 @@ struct TweetRowView: View {
     }
 }
 
-struct TweetRowView_Previews: PreviewProvider {
-    static var previews: some View {
-        TweetRowView()
-    }
-}
+//struct TweetRowView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        TweetRowView()
+//    }
+//}
