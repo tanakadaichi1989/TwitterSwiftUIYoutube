@@ -15,7 +15,6 @@ struct UserService {
             .getDocument { snapshot, _ in
                 guard let snapshot = snapshot else { return }
                 guard let user = try?  snapshot.data(as: User.self) else { return }
-                print("User name is \(user.username)")
                 completion(user)
             }
     }
