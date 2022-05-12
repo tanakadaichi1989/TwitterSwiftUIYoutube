@@ -19,4 +19,15 @@ struct UserService {
                 completion(user)
             }
     }
+    
+    func fetchUsers(completion: @escaping ([User]) -> Void) {
+        var users:[User] = [User]()
+        Firestore.firestore().collection("users")
+            .getDocuments { snapshot, _ in
+                guard let documents = snapshot?.documents else { return }
+                let users = documents.compactMap({ try? $0.data(as: User.self) })
+                completion(users)
+            }
+    }
 }
+
