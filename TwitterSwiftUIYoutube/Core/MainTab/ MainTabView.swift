@@ -48,8 +48,8 @@ struct MainTabView: View {
     }
 }
 
-struct MaintabView_Previews: PreviewProvider {
-    static var previews: some View {
-        MainTabView()
-    }
-}
+//struct MaintabView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        MainTabView()
+//    }
+//}

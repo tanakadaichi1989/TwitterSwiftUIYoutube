@@ -24,8 +24,9 @@
 		A10CFE7A282423C800493F92 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = A10CFE79282423C800493F92 /* FirebaseFirestoreSwift */; };
 		A10CFE7C282423C800493F92 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = A10CFE7B282423C800493F92 /* FirebaseStorage */; };
 		A12885FA282C19A800CC71E5 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = A12885F9282C19A800CC71E5 /* Kingfisher */; };
+		A17739BD282CA316005A26FB /* ExploreViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A17739BC282CA316005A26FB /* ExploreViewModel.swift */; };
 		A1D5DB8F281D58E4005BE0A9 /*  MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1D5DB8E281D58E4005BE0A9 /*  MainTabView.swift */; };
-		A1D5DB95281D5ACB005BE0A9 /*  Explore.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1D5DB94281D5ACB005BE0A9 /*  Explore.swift */; };
+		A1D5DB95281D5ACB005BE0A9 /*  ExploreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1D5DB94281D5ACB005BE0A9 /*  ExploreView.swift */; };
 		A1D5DB97281D5AF4005BE0A9 /* NotificationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1D5DB96281D5AF4005BE0A9 /* NotificationsView.swift */; };
 		A1D5DB99281D5B21005BE0A9 /* MassagesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1D5DB98281D5B21005BE0A9 /* MassagesView.swift */; };
 		A1D5DB9D281D5E4A005BE0A9 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1D5DB9C281D5E4A005BE0A9 /* ProfileView.swift */; };
@@ -60,8 +61,9 @@
 		A10CFE5428216E0400493F92 /* ImageUploader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageUploader.swift; sourceTree = "<group>"; };
 		A10CFE682823E8CE00493F92 /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
 		A10CFE6A2823E99100493F92 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = User.swift; path = TwitterSwiftUIYoutube/Service/User.swift; sourceTree = SOURCE_ROOT; };
+		A17739BC282CA316005A26FB /* ExploreViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreViewModel.swift; sourceTree = "<group>"; };
 		A1D5DB8E281D58E4005BE0A9 /*  MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = " MainTabView.swift"; sourceTree = "<group>"; };
-		A1D5DB94281D5ACB005BE0A9 /*  Explore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = " Explore.swift"; sourceTree = "<group>"; };
+		A1D5DB94281D5ACB005BE0A9 /*  ExploreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = " ExploreView.swift"; sourceTree = "<group>"; };
 		A1D5DB96281D5AF4005BE0A9 /* NotificationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsView.swift; sourceTree = "<group>"; };
 		A1D5DB98281D5B21005BE0A9 /* MassagesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MassagesView.swift; sourceTree = "<group>"; };
 		A1D5DB9C281D5E4A005BE0A9 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
@@ -295,6 +297,7 @@
 		A1D5DBA0281D846F005BE0A9 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				A17739BC282CA316005A26FB /* ExploreViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -302,7 +305,7 @@
 		A1D5DBA1281D8478005BE0A9 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				A1D5DB94281D5ACB005BE0A9 /*  Explore.swift */,
+				A1D5DB94281D5ACB005BE0A9 /*  ExploreView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -484,11 +487,12 @@
 				A10CC370281400870098B8C2 /* TweetRowView.swift in Sources */,
 				A1D5DBAB281D8DE8005BE0A9 /* SideMenuRowView.swift in Sources */,
 				A1D5DBC5281E7D3F005BE0A9 /* AuthenticationHeaderView.swift in Sources */,
+				A17739BD282CA316005A26FB /* ExploreViewModel.swift in Sources */,
 				A10CC36D2813FFD80098B8C2 /* FeedView.swift in Sources */,
 				A1D5DB9F281D7D88005BE0A9 /* TweetFilterViewModel.swift in Sources */,
 				A10CFE6B2823E99100493F92 /* User.swift in Sources */,
 				A1D5DBC3281E53FA005BE0A9 /* CustomInputField.swift in Sources */,
-				A1D5DB95281D5ACB005BE0A9 /*  Explore.swift in Sources */,
+				A1D5DB95281D5ACB005BE0A9 /*  ExploreView.swift in Sources */,
 				A1D5DBB8281E36B9005BE0A9 /* TextArea.swift in Sources */,
 				A1D5DBA9281D8DD3005BE0A9 /* SideMenuView.swift in Sources */,
 				A1D5DB99281D5B21005BE0A9 /* MassagesView.swift in Sources */,
