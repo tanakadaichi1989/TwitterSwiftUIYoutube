@@ -8,19 +8,17 @@
 import SwiftUI
 
 struct ExploreView: View {
-    @EnvironmentObject var viewModel: AuthViewModel
+    @ObservedObject var viewModel = ExploreViewModel()
     
     var body: some View {
         VStack {
             ScrollView {
                 LazyVStack {
-                    ForEach(0...25 ,id: \.self){ _ in
+                    ForEach(viewModel.users){ user in
                         NavigationLink {
-                            if let user = viewModel.currentUser {
-                                ProfileView(user: user)
-                            }
+                            ProfileView(user: user)
                         } label: {
-                            UserRowView()
+                            UserRowView(user: user)
                         }
                     }
                 }
@@ -33,6 +31,6 @@ struct ExploreView: View {
 
 struct ExporeView_Previews: PreviewProvider {
     static var previews: some View {
-        ExploreView()
+        ExploreView(viewModel: ExploreViewModel())
     }
 }
