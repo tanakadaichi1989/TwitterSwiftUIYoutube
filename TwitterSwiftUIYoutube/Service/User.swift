@@ -6,6 +6,7 @@
 //
 
 import FirebaseFirestoreSwift
+import Firebase
 
 struct User: Identifiable, Codable {
     @DocumentID var id: String?
@@ -13,4 +14,8 @@ struct User: Identifiable, Codable {
     let fullname: String
     let profileImageUrl: String
     let email: String
+    
+    var isCurrentUser: Bool {
+        return Auth.auth().currentUser?.uid == id
+    }
 }
